@@ -1,13 +1,13 @@
 import React from "react";
-import Body from "./components/body"
-import About from "./components/about"
-import Blog from "./components/blog"
-import Navbar from "./components/navbar"
+import Body from "./body"
+import About from "./about"
+import Blog from "./blog"
+import Navbar from "./navbar"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter, Route, Routes } from "react-router-dom";
-import Contact from "./components/contact";
-import Admin from "./components/admin";
-import Eachpost from "./components/eachpost"
+import Contact from "./contact";
+import Admin from "./admin";
+import Eachpost from "./eachpost"
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
      <Navbar />
          <Routes>
               <Route  exact path="/" element={<Body />} />
-              <Route exact path="/about" element={<About />} />
+              <Route  exact path="/about" element={<About />} />
               <Route  path="/contact" element={<Contact />} />
               <Route  path="/blog" element={<Blog />} />
               <Route  path="/admin" element={<Admin />} />
