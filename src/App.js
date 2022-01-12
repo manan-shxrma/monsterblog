@@ -9,6 +9,7 @@ import Contact from "./components/contact";
 import Admin from "./components/admin";
 import Eachpost from "./components/eachpost"
 
+
 function App() {
   return (
    <>
@@ -16,13 +17,16 @@ function App() {
      <Navbar />
          <Routes>
               <Route  exact path="/" element={<Body />} />
-              <Route  path="/about" element={<About />} />
+              <Route exact path="/about" element={<About />} />
               <Route  path="/contact" element={<Contact />} />
               <Route  path="/blog" element={<Blog />} />
               <Route  path="/admin" element={<Admin />} />
               <Route  path="/post/:id" element={<Eachpost />} />
          </Routes>
+         
     </BrowserRouter>
+    
+    
    </>
   );
 }
