@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+section{
+    font-family: 'Raleway', sans-serif !important;
+}
+ul{
+    list-style: none;
+}
+ul li {
+    float :left;
+}
+li{
+    display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+.homeblogmob{
+    overflow: hidden;
+    padding: 0% 0% 5% 2% !important;
+    flex-direction: column;
+  }
+  .blogpagemob{
+      padding: 20% 1% 0% 1% !important;
+  }
+}

@@ -1,0 +1,49 @@
+body{
+    background-color: #2a2728;
+    color: aliceblue;
+   
+}
+.App {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+  }
+.fontawe {
+    margin-right: 4%;
+    
+}
+.digearth{
+    margin-top: 10%;
+}
+@media only screen and (max-width: 600px) {   /*mobile*/
+    .fontawe {
+        width:200%;
+        margin-right: 60%;
+        margin-bottom: 30%;
+        
+    }
+    .digearth{
+       left: -36%;
+       width: 200px !important;
+       height: 200px !important;
+   }
+   .digearth1{
+    left: -7rem;
+    margin-top: 10%;
+}
+   .digearthdiv{
+       padding-top: 15%;
+       left: 0%;
+       width: 200;
+       height: 200;
+   }
+   .container1{
+         margin-left: 21%;
+   }
+}
+
+@media only screen and (min-width: 600px) {
+.contactcard{
+    padding-top: 0%;
+}
+}
