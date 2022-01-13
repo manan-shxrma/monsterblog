@@ -12,7 +12,7 @@ function Body(){
        setLoading(true)
        setTimeout(()=>{
           setLoading(false) 
-       },400000)
+       },4000)
   },[])
        return(<>
          <h1 className="typewriter" style={{textAlign: "center","marginTop": "5rem"}}>
