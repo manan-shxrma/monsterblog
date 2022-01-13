@@ -40,6 +40,9 @@ body{
    .container1{
          margin-left: 21%;
    }
+   .preloader{
+       padding-right: 15%;
+   }
 }
 
 @media only screen and (min-width: 600px) {
