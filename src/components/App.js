@@ -12,12 +12,12 @@ import PacmanLoader from "react-spinners/PacmanLoader";
 import "../css/index.css"
 
 function App() {
-     const [loading,setLoading]=useState(false);
+     const [loading,setLoading]=useState(true);
      useEffect(()=>{
           setLoading(true)
           setTimeout(()=>{
              setLoading(false) 
-          },5000)
+          },2500)
      },[])
                
   return (
