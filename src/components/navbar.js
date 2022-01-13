@@ -2,6 +2,7 @@ import React from "react"
 import {Nav,Container,Navbar} from "react-bootstrap"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPastafarianism ,faGlobe, faInfo, faMask} from '@fortawesome/free-solid-svg-icons'
+import {Link} from "react-router-dom"
 
 class navbar extends React.Component {
     render() {

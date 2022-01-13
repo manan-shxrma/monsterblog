@@ -30,8 +30,8 @@ function Body(){
                 <RingLoader color="#fff" loading={loading}  size={100} />
                  </div>
                 :
-                  <Model2 />}
-           <Button />
+                 <><Model2 /><Button /></> }
+           
        </>
        )}
 

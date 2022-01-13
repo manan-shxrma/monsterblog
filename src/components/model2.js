@@ -13,17 +13,18 @@ function Scene(props) {
   });
 
   
-    const [colorMap, displacementMap, normalMap, roughnessMap,AmBol] = useLoader(TextureLoader, [
-        'assets/Moss002_1K_Color.jpg',
-        'assets/Moss002_1K_Displacement.jpg',
-        'assets/Moss002_1K_NormalGL.jpg',
-        'assets/Moss002_1K_Roughness.jpg',
-        'assets/Moss002_1K_AmbientOcclusion.jpg'
-      ])
+  const [colorMap, displacementMap, normalMap, roughnessMap, MetalMap] = useLoader(TextureLoader, [
+    'assets/Chip001_1K_Color-min.jpg',
+    'assets/Chip001_1K_Displacement-min.jpg',
+    'assets/Chip001_1K_NormalGL-min.jpg',
+    'assets/Chip001_1K_Roughness-min.jpg',
+    'assets/Chip001_1K_Metalness-min.jpg',
+  ])
   return (
     <>
-      <ambientLight intensity={0.17} />
-      <directionalLight />
+      <ambientLight intensity={0.10} />
+      <directionalLight intensity={2.6}/>
+      <pointLight intensity={0.5} position={[5,10, 15]} />
       <mesh ref={myMesh}>
         <sphereGeometry args={[2.8, 100, 100]} />
         <meshStandardMaterial   displacementScale={0.2}
@@ -31,7 +32,8 @@ function Scene(props) {
                                 displacementMap={displacementMap}
                                 normalMap={normalMap}
                                 roughnessMap={roughnessMap}
-                                aoMap={AmBol}/>
+                                aoMap={MetalMap}  
+                                />
       </mesh>
     </>
   )
